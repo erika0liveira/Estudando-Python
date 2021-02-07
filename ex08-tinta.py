@@ -1,4 +1,4 @@
-# Calcular a área de uma parede e a quantidade de tinta necessária para pinta-la, sendo que cada litro = 2m²
+# Calcular a área de uma parede e a quantidade de tinta necessária para pinta-la, sendo que cada litro pinta 2m²
 
 larg = float(input('Digite a largura da parede em metros: '))
 altura = float(input('Digite a altura da parede em metros: '))
