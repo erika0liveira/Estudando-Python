@@ -1,4 +1,4 @@
-#Faça um programa que leia a média de duas notas
+#Faça um programa que leia a média de um aluno
 
 nome = str(input('Digite o nome do aluno: '))
 
