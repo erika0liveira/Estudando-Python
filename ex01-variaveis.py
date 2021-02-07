@@ -1,4 +1,4 @@
-# "Caderno" de anotações do Curso em Vídeo sobre Python - Mundo 1
+# Curso em Vídeo sobre Python - Mundo 1
 
 # Variáveis basicas
 nome = 'Erika'
@@ -16,8 +16,6 @@ print('--------------------------------------------------------')
 
 # Desafio 01 - Receber nome e dar as boas vindas
 nomeUsuario = input('Qual o seu nome?\n')
-#idadeUsuario = input('Agora digite a sua idade\n')
-#pesoUsuario = input('Por último, diga seu peso\n')
 
 print('\nOlá ' + nomeUsuario + ' seja benvindo(a)!')
 
@@ -41,6 +39,3 @@ num1 = int(input('\nDigite o primeiro número: '))
 num2 = int(input('\nDigite o segundo número: '))
 
 print('\nO resultado da soma é: ', num1 + num2)
-
-
-
