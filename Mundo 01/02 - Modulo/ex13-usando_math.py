@@ -12,10 +12,14 @@ print('#'*100)
 op = float(input('Qual o tamanho do cateto oposto? '))
 ad = float(input('Qual o tamanho do cateto adjacente? '))
 
-print('O comprimento da hipotenusa é: {}\n'.format(math.hypot(op, ad)))
+print('O comprimento da hipotenusa é: {:.2f}\n'.format(math.hypot(op, ad)))
 
 #Calcular Seno, Cosseno e Tangente de um angulo
 
 ang = float(input('Digite o angulo: '))
 
-print('Seno: {}\nCosseno: {}\nTangente: {}'.format(math.sin(ang), math.cos(ang), math.tan(ang)))
+s = math.sin(math.radians(ang))
+c = math.cos(math.radians(ang))
+t = math.tan(math.radians(ang))
+
+print('Seno: {:.2f}\nCosseno: {:.2f}\nTangente: {:.2f}'.format(s, c, t))
