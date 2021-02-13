@@ -22,7 +22,7 @@ if 'SILVA' in nome.upper():
 print('O nome "{}", contém {} letra(s) "A"'.format(nome, nome.upper().count('A')))
 
 print('''\nPrimeira vez que a letra "A" aparece é na {}° posição
-Última vez que a letra "A" aparece é na {}° posição'''.format(nome.upper().find('A'), nome.upper().rfind('A')))
+Última vez que a letra "A" aparece é na {}° posição'''.format(nome.upper().find('A')+1, nome.upper().rfind('A')+1))
 
 
 
