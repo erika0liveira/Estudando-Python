@@ -1,16 +1,32 @@
 soma = 0
-homem = {}
+c = 0
+idadeH = 0
+nomeH = ''
 
-for i in range (0, 4):
-    print('\n')
-    nome = str(input('Qual o nome da {}° pessoa? '.format(i+1)))
-    idade = int(input('Qual a idade da {}° pessoa? '.format(i+1)))
+for i in range(1, 5):
+    print('\n{} {}° PESSOA {}'.format('-'*20, i, '-'*20))
+    nome = str(input('Nome: ')).strip()
+    idade = int(input('Idade: '))
+    gen = str(input('Homem[H] ou Mulher[M]: ')).upper().strip()
+    print('-'*51)
     soma += idade
-    gen = str(input('A {}° pessoa é Homem ou Mulher? '.format(i+1))).upper()
 
-    if gen == 'HOMEM':
-        homem[i] = nome, idade
+    if gen == 'HOMEM' or gen == 'H':
+        if idadeH < idade:
+            idadeH = idade
+            nomeH = nome
 
-print('\nA média das 4 idades informadas é: {}'.format(soma/4))
-print(homem)
-print(max(idade))
+    if gen == 'MULHER' or gen == 'M':
+        if idade < 20:
+            c += 1
+
+print('\n{} RESULTADOS {}'.format('-'*25, '-'*25))
+print('A média das idades informadas é de {:.0f} anos'.format(soma/4))
+
+if idadeH > 0:
+    print('O homem mais velho tem {} anos de idade e se chama "{}"'.format(idadeH, nomeH))
+
+if c == 1:
+    print('{} mulher possui menos de 21 anos'.format(c))
+if c > 1:
+    print('{} mulheres possuem menos de 21 anos'.format(c))
