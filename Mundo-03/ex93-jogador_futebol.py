@@ -7,14 +7,11 @@ qtd = []
 while i < jogador['partidas']:
     qtd.append(int(input(f'Quantos gols {jogador["nome"]} fez na {i+1}° partida: ')))
     i += 1
-
 jogador['gols'] = qtd
 jogador['total'] = sum(jogador['gols'])
-
 print(f'\n{" 1° RESULTADO ":-^32}')
 for v in jogador:
     print(f'{v:^10} = {jogador[v]}')
-
 print(f'\n{" 2° RESULTADO ":-^32}')
 print(f'O jogador {jogador["nome"]} jogou {jogador["partidas"]} partidas')
 for j in jogador['gols']:
